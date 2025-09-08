@@ -43,6 +43,7 @@ function App() {
     <div style={{ display:"flex", justifyContent:"center", alignItems:"center"}}>
       <div style={{ textAlign: "center", marginTop: "50px", marginLeft:"500px" }}>
       <h2>URL Shortener</h2>
+      <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
       <input
         type="text"
         placeholder="Enter URL"
@@ -53,7 +54,47 @@ function App() {
       <button onClick={handleShorten} style={{ marginLeft: "10px", padding: "8px" }}>
         Shorten
       </button>
-
+      <input
+        type="text"
+        placeholder="Enter URL"
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        style={{ width: "300px", padding: "8px" }}
+      />
+      <button onClick={handleShorten} style={{ marginLeft: "10px", padding: "8px" }}>
+        Shorten
+      </button>
+      <input
+        type="text"
+        placeholder="Enter URL"
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        style={{ width: "300px", padding: "8px" }}
+      />
+      <button onClick={handleShorten} style={{ marginLeft: "10px", padding: "8px" }}>
+        Shorten
+      </button>
+      <input
+        type="text"
+        placeholder="Enter URL"
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        style={{ width: "300px", padding: "8px" }}
+      />
+      <button onClick={handleShorten} style={{ marginLeft: "10px", padding: "8px" }}>
+        Shorten
+      </button>
+      <input
+        type="text"
+        placeholder="Enter URL"
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        style={{ width: "300px", padding: "8px" }}
+      />
+      <button onClick={handleShorten} style={{ marginLeft: "10px", padding: "8px" }}>
+        Shorten
+      </button>
+      </div>
       {shortUrl && (
         <div style={{ marginTop: "20px" }}>
           <p>Shortened URL:</p>
